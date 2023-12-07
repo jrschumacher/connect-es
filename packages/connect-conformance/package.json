@@ -14,7 +14,7 @@
     "build:esm": "tsc --project tsconfig.json --module ES2015 --outDir ./dist/esm",
     "test:node:server": "./bin/connectconformance --mode server --conf conformance-node.yaml -v ./bin/conformancenodeserver",
     "test:node:client": "./bin/connectconformance --mode client --conf conformance-node.yaml -v ./bin/conformancenodeclient",
-    "test:cloudflare:server": "npx wrangler deploy -c wrangler-server.toml && ./bin/connectconformance --mode server --conf conformance-cloudflare.yaml -v ./bin/conformancecloudflareserver"
+    "test:cloudflare:server": "npx wrangler deploy -c wrangler-server.toml && ./bin/connectconformance --mode server --conf conformance-cloudflare-server.yaml -v ./bin/conformancecloudflareserver"
   },
   "dependencies": {
     "@bufbuild/protobuf": "^1.4.2",
